@@ -16,6 +16,13 @@ namespace VisualStudio2019Demo
         //--- readonly にできる private フィールド
         private Random random;
 
+        //--- 1 行の関数
+        public Chomado()
+        {
+            //--- this. が付いていない
+            random = new Random();
+        }
+
         static Chomado()
         {
             //--- コレクション初期化子を使ってない
@@ -26,13 +33,6 @@ namespace VisualStudio2019Demo
 
             Messages.Add("じんぐる(*ﾟ▽ﾟ* っ)З");
             Messages.Add("┌（┌ *ﾟ▽ﾟ*）┐ じんぐるぅ...");
-        }
-
-        //--- 1 行の関数
-        public Chomado()
-        {
-            //--- this. が付いていない
-            random = new Random();
         }
 
         //--- 括弧が右にある
